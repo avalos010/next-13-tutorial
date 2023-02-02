@@ -1,5 +1,4 @@
 import { User } from "@prisma/client";
-import Image from "next/image";
 
 function User({ user }: { user: User }) {
   return (
