@@ -4,7 +4,6 @@ import prisma from ".";
 export async function getUsers() {
   try {
     const users = await prisma.user.findMany();
-    console.log(users);
     return { users };
   } catch (error) {
     return { error };
@@ -23,6 +22,7 @@ export async function createUser(user: User) {
 export async function getUserById(id: string) {
   try {
     const user = await prisma.user.findUnique({ where: { id } });
+    console.log(user, "get");
     return { user };
   } catch (error) {
     return { error };

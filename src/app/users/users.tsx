@@ -5,8 +5,6 @@ import Link from "next/link";
 export default async function Users() {
   const { users } = await getUsers();
 
-  console.log(users, "users");
-
   return (
     <section className="fixed h-full w-1/4 bg-stone-800 pl-1">
       <div className="align-center flex flex-col justify-center py-4">
