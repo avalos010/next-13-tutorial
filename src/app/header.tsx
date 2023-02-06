@@ -21,6 +21,14 @@ function Header() {
               Users
             </Link>
           </li>
+          <li className="">
+            <Link
+              href="/tweets"
+              className="text-sm font-medium uppercase text-gray-600"
+            >
+              Tweets
+            </Link>
+          </li>
         </ul>
       </nav>
     </header>
